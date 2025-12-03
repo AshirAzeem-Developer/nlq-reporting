@@ -3,7 +3,7 @@
 > **Natural Language Querying for Any Database**  
 > _Powered by Next.js 16, Google Gemini AI, and TailwindCSS._
 
-![Banner](/banner.png)
+![Banner](./banner.png)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-16.0-black)
