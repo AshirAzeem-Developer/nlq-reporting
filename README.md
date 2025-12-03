@@ -1,6 +1,6 @@
-# 📊 E-commerce NLQ Reporting
+# 📊 AI-Powered NLQ Reporting
 
-> **Natural Language Querying for E-commerce Data**  
+> **Natural Language Querying for Any Database**  
 > _Powered by Next.js 16, Google Gemini AI, and TailwindCSS._
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -10,18 +10,18 @@
 
 ## 🚀 Overview
 
-**E-commerce NLQ Reporting** is a powerful tool that allows users to query their e-commerce database using natural language. Instead of writing complex SQL queries, simply ask questions like _"What is the total revenue from paid orders?"_ or _"Show me the top 5 best-selling products"_, and the system will generate the SQL, execute it, and present the results instantly.
+**NLQ Reporting** is a versatile, general-purpose tool that allows users to query **any relational database** using natural language. Whether you are managing e-commerce data, HR records, financial logs, or inventory systems, this tool bridges the gap between raw data and actionable insights.
 
-Built with modern web technologies, this project leverages **Google's Generative AI** to translate natural language into precise SQL queries, making data analysis accessible to everyone.
+Simply upload your database schema, and the system uses **Google's Generative AI** to intelligently understand your data structure. You can then ask questions in plain English—like _"Show me the top performing employees"_ or _"Calculate total sales for Q4"_—and the system will generate the precise SQL, execute it, and present the results instantly.
 
 ## ✨ Key Features
 
-- **🗣️ Natural Language Querying**: Ask questions in plain English and get data-driven answers.
-- **🤖 AI-Powered SQL Generation**: Uses Google Gemini AI to intelligently construct SQL queries based on your database schema.
-- **📁 Schema Awareness**: Upload your database schema to give the AI context about your specific data structure.
-- **📊 Instant Visualization**: View results in clean, formatted tables with automatic data formatting (dates, currency, booleans).
-- **💡 Smart Suggestions**: Includes built-in example queries to help you get started.
-- **🔍 Transparent Debugging**: View the generated SQL and raw AI responses to understand how your data is being retrieved.
+- **🌍 Universal Database Support**: Works with any database schema. Just upload your `CREATE TABLE` statements, and the AI adapts instantly.
+- **🗣️ Natural Language Querying**: Ask questions in plain English and get data-driven answers without writing a single line of SQL.
+- **🤖 AI-Powered SQL Generation**: Leverages Google Gemini AI to construct accurate SQL queries tailored to your specific schema.
+- **📊 Instant Visualization**: Results are presented in clean, formatted tables with automatic handling of dates, currency, and booleans.
+- **💡 Smart Context Awareness**: The AI understands relationships between your tables (foreign keys, joins) to answer complex multi-table questions.
+- **🔍 Transparent Debugging**: View the generated SQL and raw AI responses to verify accuracy and understand the logic.
 
 ## 🛠️ Tech Stack
 
@@ -37,7 +37,7 @@ Built with modern web technologies, this project leverages **Google's Generative
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/AshirAzeem-Developer/nlq-reporting.git
+    git clone https://github.com/yourusername/nlq-reporting.git
     cd nlq-reporting
     ```
 
@@ -59,7 +59,7 @@ Built with modern web technologies, this project leverages **Google's Generative
     DB_HOST=localhost
     DB_USER=root
     DB_PASSWORD=password
-    DB_NAME=dashboarddb
+    DB_NAME=your_database_name
     ```
 
 4.  **Run the development server:**
@@ -73,8 +73,11 @@ Built with modern web technologies, this project leverages **Google's Generative
 
 ## 📖 Usage
 
-1.  **Upload Schema**: Navigate to the **Upload Schema** section to provide your database structure (CREATE TABLE statements). This helps the AI understand your data.
-2.  **Ask a Question**: Type your question in the search bar (e.g., _"How many orders were placed last week?"_).
+1.  **Upload Schema**: Navigate to the **Upload Schema** section. Paste your database's `CREATE TABLE` statements. This is the critical step that teaches the AI about your specific data structure.
+2.  **Ask a Question**: Type your question in the search bar.
+    - _Example (E-commerce):_ "What is the total revenue from paid orders?"
+    - _Example (HR):_ "List all employees hired after 2023."
+    - _Example (Inventory):_ "Which items are low on stock?"
 3.  **View Results**: The system will display the generated SQL, a brief explanation, and the data results in a table.
 
 ## 🤝 Contributing
