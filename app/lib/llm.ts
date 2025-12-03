@@ -8,14 +8,14 @@ export async function generateSQL(
 ): Promise<{ sql: string; explanation: string; rawResponse: string }> {
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-  const prompt = `You are a PostgreSQL expert. Generate a SELECT query based on the user's question.
+  const prompt = `You are a mysql expert. Generate a SELECT query based on the user's question.
 
 ${SCHEMA_CONTEXT}
 
 USER QUESTION: "${userQuery}"
 
 INSTRUCTIONS:
-1. Generate ONLY a valid PostgreSQL SELECT query
+1. Generate ONLY a valid mysql SELECT query
 2. Use proper JOINs based on the schema relationships above
 3. Return your response in this EXACT format:
 
